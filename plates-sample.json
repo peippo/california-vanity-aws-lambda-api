@@ -1,0 +1,109 @@
+{
+	"plates": [
+		{
+			"PutRequest": {
+				"Item": {
+					"plate": { "S": "F DIABDZ" },
+					"reviewReasonCode": { "N": "2" },
+					"customerMeaning": {
+						"S": "It means forever diabetes. its are diabetes foundation we walk every year."
+					},
+					"reviewerComments": { "S": "Fuck diabetes" },
+					"isApproved": { "BOOL": false }
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"plate": { "S": "HVNNHEL" },
+					"reviewReasonCode": { "N": "2" },
+					"customerMeaning": { "S": "Album title" },
+					"reviewerComments": { "S": "Heaven and hell" },
+					"isApproved": { "BOOL": true }
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"plate": { "S": "DAD$PP" },
+					"reviewReasonCode": { "N": "2" },
+					"customerMeaning": {
+						"S": "My dad loves me and got me a new car"
+					},
+					"reviewerComments": { "S": "Pp as in urine" },
+					"isApproved": { "BOOL": false }
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"plate": { "S": "RJ X 88" },
+					"reviewReasonCode": { "N": "4" },
+					"customerMeaning": {
+						"S": "My english first name and year of birth"
+					},
+					"reviewerComments": { "S": "88-hitler" },
+					"isApproved": { "BOOL": false }
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"plate": { "S": "$ OVRH8" },
+					"reviewReasonCode": { "N": "7" },
+					"customerMeaning": { "S": "Love over hate" },
+					"reviewerComments": { "S": "Hate?" },
+					"isApproved": { "BOOL": true }
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"plate": { "S": "WW&OG" },
+					"reviewReasonCode": { "N": "2" },
+					"customerMeaning": { "NULL": true },
+					"reviewerComments": { "S": "Original gangster" },
+					"isApproved": { "BOOL": false }
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"plate": { "S": "/PUCKR/" },
+					"reviewReasonCode": { "N": "0" },
+					"customerMeaning": { "S": "Hard jeep obstacle" },
+					"reviewerComments": { "S": "Slang term for anus" },
+					"isApproved": { "BOOL": true }
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"plate": { "S": "DRG+FLI" },
+					"reviewReasonCode": { "N": "0" },
+					"customerMeaning": { "S": "Dragonfly" },
+					"reviewerComments": { "S": "Drugs looks like dragon fly" },
+					"isApproved": { "BOOL": false }
+				}
+			}
+		},
+		{
+			"PutRequest": {
+				"Item": {
+					"plate": { "S": "$PUSSIE" },
+					"reviewReasonCode": { "N": "1" },
+					"customerMeaning": { "S": "I love cats" },
+					"reviewerComments": { "S": "Love pussy" },
+					"isApproved": { "BOOL": false }
+				}
+			}
+		}
+	]
+}
