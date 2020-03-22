@@ -30,22 +30,22 @@ iamRoleStatements:
           - dynamodb:GetItem
           # - dynamodb:DescribeTable
           # - dynamodb:Query
-      Resource: "arn:aws:dynamodb:eu-north-1:*:*"
+      Resource: "arn:aws:dynamodb:eu-north-1:${env:ACCOUNT_ID}:table/${env:TABLE_NAME}"
 
 functions:
     random:
-        handler: plates.random
+        handler: random-plate.random
         events:
             - http:
                   path: plates/random
                   method: get
                   cors: true
-                  authorizer: aws_iam
+                  # authorizer: aws_iam
     single:
-        handler: plates.single
+        handler: single-plate.single
         events:
             - http:
-                  path: plates/{plate}
+                  path: plates/single/{plate}
                   method: get
                   cors: true
-                  authorizer: aws_iam
+                  # authorizer: aws_iam
