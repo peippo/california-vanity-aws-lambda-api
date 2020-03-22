@@ -47,11 +47,9 @@ export async function random(event, context) {
 }
 
 export async function single(event, context) {
-	const data = JSON.parse(event.body);
-
 	const params = {
 		TableName: process.env.TABLE_NAME,
-		Key: { plate: data.plate }
+		Key: { plate: event.pathParameters.plate }
 	};
 
 	try {

@@ -26,10 +26,10 @@ provider:
 iamRoleStatements:
     - Effect: Allow
       Action:
-          - dynamodb:DescribeTable
-          - dynamodb:Query
           - dynamodb:Scan
           - dynamodb:GetItem
+          # - dynamodb:DescribeTable
+          # - dynamodb:Query
       Resource: "arn:aws:dynamodb:eu-north-1:*:*"
 
 functions:
@@ -37,7 +37,7 @@ functions:
         handler: plates.random
         events:
             - http:
-                  path: plates
+                  path: plates/random
                   method: get
                   cors: true
                   authorizer: aws_iam
@@ -45,7 +45,7 @@ functions:
         handler: plates.single
         events:
             - http:
-                  path: plates
+                  path: plates/{plate}
                   method: get
                   cors: true
                   authorizer: aws_iam

@@ -1,3 +1,5 @@
 {
-	"body": "{\"plate\":\"/PUCKR/\"}"
+	"pathParameters": {
+		"plate": "/PUCKR/"
+	}
 }
