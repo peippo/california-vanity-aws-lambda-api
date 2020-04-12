@@ -28,8 +28,8 @@ iamRoleStatements:
       Action:
           - dynamodb:Scan
           - dynamodb:GetItem
-          # - dynamodb:DescribeTable
-          # - dynamodb:Query
+          - dynamodb:DescribeTable
+          - dynamodb:Query
       Resource: "arn:aws:dynamodb:eu-north-1:${env:ACCOUNT_ID}:table/${env:TABLE_NAME}"
 
 functions:
@@ -45,7 +45,7 @@ functions:
         handler: single-plate.single
         events:
             - http:
-                  path: plates/single/{plate}
+                  path: plates/single/{id}
                   method: get
                   cors: true
                   # authorizer: aws_iam

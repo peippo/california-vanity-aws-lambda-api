@@ -9,7 +9,7 @@ export async function random(event, context) {
 	let randomPlate;
 	const itemCountParams = {
 		TableName: process.env.TABLE_NAME,
-		ProjectionExpression: "plate"
+		ProjectionExpression: "id",
 	};
 
 	try {
@@ -20,7 +20,7 @@ export async function random(event, context) {
 
 		if (result.Items) {
 			let randomItemNumber = getRandomInt(0, result.Count - 1);
-			randomPlate = result.Items[randomItemNumber].plate;
+			randomPlate = result.Items[randomItemNumber].id;
 		} else {
 			return failure({ status: false, error: "No plates found" });
 		}
@@ -30,7 +30,7 @@ export async function random(event, context) {
 
 	const params = {
 		TableName: process.env.TABLE_NAME,
-		Key: { plate: randomPlate }
+		Key: { id: randomPlate },
 	};
 
 	try {

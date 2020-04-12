@@ -3,6 +3,7 @@
 		{
 			"PutRequest": {
 				"Item": {
+					"id": { "N": "0" },
 					"plate": { "S": "F DIABDZ" },
 					"reviewReasonCode": { "N": "2" },
 					"customerMeaning": {
@@ -16,6 +17,7 @@
 		{
 			"PutRequest": {
 				"Item": {
+					"id": { "N": "1" },
 					"plate": { "S": "HVNNHEL" },
 					"reviewReasonCode": { "N": "2" },
 					"customerMeaning": { "S": "Album title" },
@@ -27,6 +29,7 @@
 		{
 			"PutRequest": {
 				"Item": {
+					"id": { "N": "2" },
 					"plate": { "S": "DAD$PP" },
 					"reviewReasonCode": { "N": "2" },
 					"customerMeaning": {
@@ -40,6 +43,7 @@
 		{
 			"PutRequest": {
 				"Item": {
+					"id": { "N": "3" },
 					"plate": { "S": "RJ X 88" },
 					"reviewReasonCode": { "N": "4" },
 					"customerMeaning": {
@@ -53,6 +57,7 @@
 		{
 			"PutRequest": {
 				"Item": {
+					"id": { "N": "4" },
 					"plate": { "S": "$ OVRH8" },
 					"reviewReasonCode": { "N": "7" },
 					"customerMeaning": { "S": "Love over hate" },
@@ -64,6 +69,7 @@
 		{
 			"PutRequest": {
 				"Item": {
+					"id": { "N": "5" },
 					"plate": { "S": "WW&OG" },
 					"reviewReasonCode": { "N": "2" },
 					"customerMeaning": { "NULL": true },
@@ -75,6 +81,7 @@
 		{
 			"PutRequest": {
 				"Item": {
+					"id": { "N": "6" },
 					"plate": { "S": "/PUCKR/" },
 					"reviewReasonCode": { "N": "0" },
 					"customerMeaning": { "S": "Hard jeep obstacle" },
@@ -86,6 +93,7 @@
 		{
 			"PutRequest": {
 				"Item": {
+					"id": { "N": "7" },
 					"plate": { "S": "DRG+FLI" },
 					"reviewReasonCode": { "N": "0" },
 					"customerMeaning": { "S": "Dragonfly" },
@@ -97,6 +105,7 @@
 		{
 			"PutRequest": {
 				"Item": {
+					"id": { "N": "8" },
 					"plate": { "S": "$PUSSIE" },
 					"reviewReasonCode": { "N": "1" },
 					"customerMeaning": { "S": "I love cats" },
